@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 69vh;
+}
+
+/* .img-container{
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/Fitness-Desktop-Wallpaper.jpg");
+    width: 100%;
+    height: 300px;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin:initial;
+}
+
+.img-container2{
+    background-image: url("https://wallpapercave.com/wp/wp2639536.jpg");
+    width: 100%;
+    height: 300px;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin:initial;
+} */
+
+.card{
+    display: flex;
+}
+
+img{
+    width: 426px;
+}
+
+h1{
+    background-color: rgb(52, 58, 189);
+    padding: 30px 10px;
+    text-shadow: #FC0 1px 0 10px;
+    text-align: center;
+}

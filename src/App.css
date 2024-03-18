@@ -1,0 +1,21 @@
+.one-card{
+    display: flex;
+    /* margin: 0px 1rem; */
+    border: 2px solid black;
+    width: 100%;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+
+}
+
+#search-input{
+    height: 4rem;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#input{
+    width: 98%;
+    height: 30px;
+}
