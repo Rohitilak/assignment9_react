@@ -5,16 +5,11 @@ import  Navbar from './components/Navbar.js';
 // import Main from './components/Main.js';
 import Card from './components/Card.js';
 import { useEffect, useState } from 'react';
-// import GymSearch from './components/GymSearch.js';
+
 
 function App() {
   const [datas, setDatas] = useState([]);
-  // const [query , setQuery] = useState('');
-  // const [searchQuery, setSearchQuery] = useState('');
   const [limit, setLimit] = useState(4);
-
-
-  // const slice = datas.slice(0, page);
 
   async function getData(){
     const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=50';
@@ -25,7 +20,7 @@ function App() {
         'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
       }
     };
-    
+ 
     try {
       const response = await fetch(url, options);
       const result = await response.json();
@@ -45,15 +40,10 @@ function App() {
     setLimit(limit+4);
   }
 
-  // const handleSearch = (query) => {
-  //   setSearchQuery(query);
-  // };
 
   return (
     <div className="App">
      <Navbar/>
-     {/* <GymSearch onSearch={handleSearch} /> */}
-
      <div className='one-card'>
       {
         datas.map((val,index)=>{
@@ -65,7 +55,7 @@ function App() {
         })
         } 
       </div>
-      <button onClick={()=> loadMore}>Load More</button>
+      <button onClick={()=> loadMore} id="btn" >Load More</button>
     </div>
   );
 }
@@ -73,14 +63,17 @@ function App() {
 export default App;
 
 
-// {
-//   data.map((val,index)=>{
-//     return (
-//       <Card key={index}
-//       img={val.img}
-//       name={val.name}
-//       des={val.des}
-//     />
-//     )
-//   })
-//   }
+// // {
+// //   data.map((val,index)=>{
+// //     return (
+// //       <Card key={index}
+// //       img={val.img}
+// //       name={val.name}
+// //       des={val.des}
+// //     />
+// //     )
+// //   })
+// //   }
+
+/*---------------------------------------------------------------------*/
+
